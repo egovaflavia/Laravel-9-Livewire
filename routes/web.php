@@ -15,10 +15,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('welcome');
+});
 
-Route::get('/', Index::class)->name('post.index');
-Route::get('/create', Create::class)->name('post.create');
-Route::get('/edit/{id}', Index::class)->name('post.edit');
+// Route::get('/', Index::class)->name('post.index');
+// Route::get('/create', Create::class)->name('post.create');
+// Route::get('/edit/{id}', Index::class)->name('post.edit');
+
+
+// Route::get('/', function () {
+//     return view('default');
+// });

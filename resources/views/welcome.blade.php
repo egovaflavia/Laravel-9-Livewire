@@ -25,7 +25,7 @@
                             {{ session('message') }}
                         </div>
                         @endif
-                        @livewire('posting')
+                        @livewire('user-pagination')
                     </div>
                 </div>
             </div>
