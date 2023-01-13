@@ -3,7 +3,7 @@
 <div>
     <div class="card">
         <div class="card-body">
-            <form>
+            <form wire:submit.prevent="store">
                 <div class="form-group">
                     <label>TITLE</label>
                     <input type="text" wire:model="title" class="form-control @error('title') is-invalid @enderror"
@@ -24,7 +24,7 @@
                     </span>
                     @enderror
                 </div>
-                <button wire:click.prevent="store()" class="btn btn-primary">SIMPAN</button>
+                <button type="submit" class="btn btn-primary">SIMPAN</button>
                 <a href="{{ route('post.index') }}" class="btn btn-success">KEMBALI</a>
             </form>
         </div>
